@@ -1,0 +1,12 @@
+public class main {
+    public static boolean gameIsNotFinished = true;
+    public static int currentPiecePosition = 0;
+    public static int numPlayers = 0;
+    public static void main(String[] args) {
+        start();
+    }
+    public static int getNumberOfPlayers() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj liczbę graczy: ");
+        return scanner.nextInt();
+    }
