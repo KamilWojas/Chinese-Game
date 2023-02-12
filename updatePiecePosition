@@ -1,0 +1,6 @@
+public static void updatePiecePosition(int move) {
+        currentPiecePosition += move;
+        if (currentPiecePosition > 100) {
+            currentPiecePosition = 100;
+        }
+    }
