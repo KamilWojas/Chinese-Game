@@ -1,0 +1,8 @@
+public static boolean checkForWinner() {
+        if (currentPiecePosition >= 100) {
+            System.out.println("Gracz wygrał!");
+            gameIsNotFinished = false;
+            return true;
+        }
+        return false;
+    }
