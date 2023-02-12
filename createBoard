@@ -1,0 +1,14 @@
+private static char[][] createBoard() {
+        char[][] board = new char[10][10];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                if (i % 2 == 0) {
+                    board[i][j] = '#';
+                } else {
+                    board[i][j] = '.';
+                }
+            }
+        }
+        board[currentPiecePosition / 10][currentPiecePosition % 10] = 'P';
+        return board;
+    }
